@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wesharp2018春招</title>
+     <style type=text/css>
+         .all{background-color: rgba(123,214,255,0.44)}
+         .photo1{position: relative;
+                 opacity: 0;
+             animation-name:move1;
+             animation-duration: 5s;
+             animation-timing-function:ease;
+             animation-iteration-count:1;
+             -webkit-animation-name: move1;
+             -webkit-animation-duration: 5s;
+             -webkit-animation-timing-function:ease;
+             -webkit-animation-iteration-count:1;
+             animation-fill-mode:forwards;
+             -webkit-animation-fill-mode: forwards; }
+         .photo1 img{width: 25%;height:300px;position:absolute;top: 30px;left:10%;}
+         .photo1 p{position:absolute;top:120px;left: 14%;}
+         .photo2 { position: relative;
+             opacity: 0;
+             animation-name:move2;
+             animation-duration: 5s;
+             animation-timing-function:ease;
+             animation-iteration-count:1;
+             -webkit-animation-name: move2;
+             -webkit-animation-duration: 5s;
+             -webkit-animation-timing-function:ease;
+             -webkit-animation-iteration-count:1;
+             animation-fill-mode:forwards;
+             -webkit-animation-fill-mode: forwards;
+             -webkit-animation-delay:5s;
+             animation-delay:5s;}
+         .photo2 img{width: 25%;height:300px;position:absolute;top:30px;right:10%;}
+         .photo2 p{position: absolute ;top: 100px;left:70%;color: #e7e7e7}
+         .photo3{
+             position:relative;
+             opacity: 0;
+             animation-name:move3;
+             animation-duration: 5s;
+             animation-timing-function:ease;
+             animation-iteration-count:1;
+             -webkit-animation-name: move3;
+             -webkit-animation-duration: 5s;
+             -webkit-animation-timing-function:ease;
+             -webkit-animation-iteration-count:1;
+             animation-fill-mode:forwards;
+             -webkit-animation-fill-mode: forwards;
+             -webkit-animation-delay:10s;
+             animation-delay:10s;}
+         .photo3 img{width:25%;height:300px;position:absolute;top: 400px;left:38%;}
+         .photo3 p{position: absolute;top:500px;left: 42%;color: #e74c3c}
+         .write{position:absolute;top: 30px;left: 40%;opacity: 0;
+             animation-name:wenzi;
+             animation-duration: 2s;
+             animation-timing-function:ease;
+             animation-iteration-count:1;
+             -webkit-animation-name:wenzi;
+             -webkit-animation-duration: 2s;
+             -webkit-animation-timing-function:ease;
+             -webkit-animation-iteration-count:1;
+             animation-fill-mode:forwards;
+             -webkit-animation-fill-mode: forwards;
+             -webkit-animation-delay:15s;
+             animation-delay:15s; }
+         .wenzi{font-size: 2em;color: rgba(36,255,88,0.44);font-family: 华文行楷;position:relative;left:-25%;}
+         #bm{border-radius: 14px;width:30%;height:100px;background-color: rgba(24,26,255,0.25);font-size: 1.4em;font-family: 华文新魏 ;
+         position: relative;left: 7%;top:-400px;
+             animation-name:bm;
+             animation-duration: 2s;
+             animation-timing-function:ease;
+             animation-iteration-count:1;
+             -webkit-animation-name:bm;
+             -webkit-animation-duration: 2s;
+             -webkit-animation-timing-function:ease;
+             -webkit-animation-iteration-count:1;
+             animation-fill-mode:forwards;
+             -webkit-animation-fill-mode: forwards;
+             -webkit-animation-delay:17s;
+             animation-delay:17s; }
+
+         @keyframes move1 {
+            0% {opacity: 0;top:0;left:0;}
+            40%{opacity: 1;top:0;left:0;}
+             80%{opacity:1;top:0;left:0;}
+             100%{opacity: 1;top: -20px;left: -7%;}
+         }
+         @-webkit-keyframes move1 {
+             0% {opacity: 0;top: 0;left:0;}
+             40%{opacity: 1;top: 0;left:0;}
+             80%{opacity:1;top: 0;left:0;}
+             100%{opacity: 1;top: -20px;left:-7%;}
+         }
+         @keyframes move2 {
+             0% {opacity: 0;top:0;left:0;}
+             40%{opacity: 1;top:0;left:0;}
+             80%{opacity:1;top:0;left:0;}
+             100%{opacity: 1;top:-20px;left: 7%;}
+         }
+         @-webkit-keyframes move2 {
+             0% {opacity: 0;top:0;left:0;}
+             40%{opacity: 1;top:0;left:0;}
+             80%{opacity:1;top:0;left:0;}
+             100%{opacity: 1;top:-20px;left: 7%;}
+         }
+         @keyframes move3 {
+             0% {opacity: 0;top:0;left:0;}
+             40%{opacity: 1;top:0;left:0;}
+             80%{opacity:1;top:0;left:0;}
+             100%{opacity: 1;top:100px;left:0;}
+         }
+         @-webkit-keyframes move3 {
+             0% {opacity: 0;top:0;left:0;}
+             40%{opacity: 1;top:0;left:0;}
+             80%{opacity:1;top:0;left:0;}
+             100%{opacity: 1;top:100px;left:0;}
+         }
+         @keyframes wenzi {
+             from{opacity: 0}
+             to{opacity:1}
+         }
+         @-webkit-keyframes wenzi {
+             from{opacity: 0}
+             to{opacity:1}
+         }
+         @keyframes bm {
+             0%{top:-400px;opacity:0}
+             80%{top:0;opacity:0}
+             100%{top:10px;}
+         }
+         @-webkit-keyframes bm {
+            0%{top:-400px;opacity:0}
+             80%{top:0;opacity:0}
+             100%{top:10px;}
+         }
+     </style>
+</head>
+<body class="all">
+<div class="photo1">
+    <img src="12663797_195514399002_2.jpg">
+    <p>前端组：我们是把想象变为现实的魔<br>术师，与用户最亲密的执行者。负责进<br>行桌面端及移动端 Web 应用的开发，<br>并在前端领域丰富的拓展方向研究学习。</p>
+</div>
+<div class="photo2">
+    <img src="579bd31638ba1_610.jpg">
+    <p>设计组：我们是天马行空的想象家，用自己<br>的笔触渲染这世界。工作主要为应用的交互<br>及UI设计，以及海报、幻灯片等其他平面作<br>品的制作。</p>
+</div>
+<div class="photo3">
+    <img src="IMG_20180219_135755.jpg">
+    <p>程序组：我们是逻辑问题与脑筋急转弯的大<br>师。Web 应用背后的有力支持，负责开发<br>API 及数据库的设计，并在算法、应用开发<br>方向深入研究。</p>
+</div>
+<div class="write">
+    <p class="wenzi">在 WESharp 遇到一群有趣的人，做你想做的事</p>
+    <p>答疑 QQ 群：658124974</p>
+    <p>负责人联系方式及简历投递：mondogao@gmail.com</p>
+    <form>
+        <input type="button" id="bm" name="baoming"  value="点击填写报名表单">
+    </form>
+</div>
+</body>
+</html>

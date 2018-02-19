@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wesharp2018春招</title>
+    <style type=text/css>
+    .h1 img{width: 100% ;height: 900px;
+        animation-name:first ;
+        animation-duration: 5s;
+        animation-timing-function:ease;
+        animation-iteration-count: 1;
+        -webkit-animation-name: first ;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        position: relative }
+    #guy{position: absolute ;top: 700px;left: 45%;height: 100px;width:300px;
+        animation-name:guy ;
+        animation-duration: 5s;
+        animation-timing-function:ease;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: guy ;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:infinite;
+        animation-delay: 5s;
+        -webkit-animation-delay: 5s;
+       font-size: 2em;
+        border-radius: 14px;
+         font-family: 华文仿宋;
+        font-weight: 800;
+        color: #e74c3c ; background-color: rgba(19,99,152,0.42);
+    border-color:rgba(19,99,152,0.42) }
+    #guy1{
+        animation-name:position ;
+        animation-duration: 20s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: position ;
+        -webkit-animation-duration: 20s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+    }
+    .h1{ position: relative }
+    .h2{  animation-name:color ;
+        animation-duration: 4s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+        -webkit-animation-name:color ;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:infinite;}
+    .h2 p{position: absolute ;top:-200px;left:30%;font-size: 4em;font-family: 华文行楷   ;
+        animation-name:move1;
+        animation-duration: 1s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: move1;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-delay:4s;
+        animation-delay:4s;
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;}
+    .h3 p{float:left;font-size: 1.5em;font-family: 楷体  ;font-weight: 600;color: #dcfeff}
+    .h31{position:absolute ;top:-300px;left: 5%;
+        animation-name:move;
+        animation-duration: 2s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: move;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-delay:5s;
+        animation-delay:5s;
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;}
+    .h32{position:absolute ;top: -500px;left: 15%;
+        animation-name:move;
+        animation-duration: 2s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: move;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-delay:7s;
+        animation-delay:7s;
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;}
+    .h33{position:absolute ;top: -500px;  left: 25%;
+        animation-name:move;
+        animation-duration: 2s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: move;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-delay:9s;
+        animation-delay:9s;
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;}
+    .h34{position:absolute ;top:-500px;left: 35%;
+        animation-name:move;
+        animation-duration: 2s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: move;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-delay:11s;
+        animation-delay:11s;
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;}
+    .h35{position: absolute ;top:-500px;left:45%;
+        animation-name:move;
+        animation-duration: 2s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: move;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-delay:13s;
+        animation-delay:13s;
+        animation-fill-mode:forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .h36{position: absolute ;top:-500px;left:55%;
+        animation-name:move;
+        animation-duration: 2s;
+        animation-timing-function:ease;
+        animation-iteration-count:1;
+        -webkit-animation-name: move;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function:ease;
+        -webkit-animation-iteration-count:1;
+        -webkit-animation-delay:15s;
+        animation-delay:15s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;}
+    @keyframes first  {
+            from{opacity: 0;}
+            to{opacity: 1}
+        }
+    @-webkit-keyframes first {
+        from{opacity: 0;}
+        to{opacity: 1}
+    }
+        @keyframes guy{
+            0%{ color: #e74c3c ; background-color: rgba(19,99,152,0.42)}
+            50%{   color: darkturquoise;background-color: rgba(21,22,124,0.72)}
+            100%{color:#e74c3c ;background-color: rgba(19,99,152,0.42)}
+        }
+        @-webkit-keyframes guy {
+            0%{ color: #e74c3c ; background-color: rgba(19,99,152,0.42)}
+            50%{   color: darkturquoise;background-color: rgba(21,22,124,0.72)}
+            100%{color:#e74c3c ;background-color: rgba(19,99,152,0.42)}
+        }
+        @keyframes position {
+           0%{opacity: 0}
+            80%{opacity: 0}
+            100%{opacity: 1}
+        }
+        @-webkit-keyframes position {
+            0%{opacity: 0}
+            80%{opacity: 0}
+            100%{opacity: 1}
+        }
+        @keyframes color {
+            0%{color: rgba(22,180,243,0.61)}
+            50%{color: rgba(26,205,243,0.61)}
+            100%{color:rgba(22,180,243,0.61)}
+        }
+        @-webkit-keyframes color {
+            0%{color: rgba(22,180,243,0.61)}
+            50%{color: rgba(26,205,243,0.61)}
+            100%{color:rgba(22,180,243,0.61)}
+        }
+        @keyframes move {
+            from{top:-300px;}
+            to{top:100px;}
+        }
+        @-webkit-keyframes move {
+            from{top:-300px;}
+            to{top:100px;}
+        }
+        @keyframes move1 {
+            from{top:-200px;}
+            to{top:0;}
+        }
+        @-webkit-keyframes move1 {
+            from{top:-200px;}
+            to{top:0;}
+        }
+    </style>
+</head>
+<body>
+<div class="h1">
+    <img src="timg.jpg  ">
+    <div class="h11">
+        <form id="guy1">
+        <input type="button" name="begin" id="guy" value="梦 想 由 此 开 始">
+        </form>
+    </div>
+    <div class="h2">
+    <p>Wesharp2018年春季招新</p>
+    </div>
+    <div class="h3">
+        <p class="h31">W<br>e<br>s<br>h<br>a<br>r<br>p</p>
+        <p class="h32">一<br>个<br>有<br>趣<br>又<br>精<br>彩<br>的<br>地<br>方</p>
+        <p class="h33">在<br>这<br>里<br>，<br>你<br>可<br>以<br>学<br>到<br>有<br>用<br>的<br>知<br>识</p>
+        <p class="h34">在<br>这<br>里<br>，<br>你<br>可<br>以<br>结<br>实<br>有<br>趣<br>的<br>小<br>伙<br>伴</p>
+        <p class="h35">这<br>里<br>，<br>是<br>星<br>辰<br>大<br>海<br>的<br>起<br>点</p>
+        <p class="h36">还<br>等<br>什<br>么<br>，<br>赶<br>紧<br>上<br>船<br>与<br>我<br>们<br>一<br>同<br>前<br>行<br>吧</p>
+    </div>
+</div>
+</body>
+</html>
